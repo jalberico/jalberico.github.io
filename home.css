@@ -1,0 +1,21 @@
+#title{
+    background-color: orange;
+    color: blue;
+    text-align: center;
+}
+
+#intro{
+    color:orange;
+    text-align: center;
+    font-family: Verdana;
+    background-color: blue;
+
+}
+
+#main {
+    color: blue;
+    font-family: Verdana;
+    text-align: center;
+    background-color: orange;
+}
+

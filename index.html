@@ -1,0 +1,61 @@
+<!--Remember that each HTML document requires a document type declaration !DOCTYPE
+  The following is typically used to declare the document to be HTML 4.01 Transitional.
+  This type includes all elements and attributes of HTML 4 strict,
+  but adds presentational attributes and link targets. -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Notes JavaScript</title>
+    <!-- Link CSS and JavaScript files to index.html-->
+    <link rel="stylesheet" href="home.css" type="text/css">
+    <script src="myScript.js"></script>
+</head>
+
+
+<body id="grad1">
+<h1 id="title">M319 Notes JavaScript by Ms. Alberico</h1>
+<br>
+<p id="intro">JavaScript programs the behavior of the web.</p>
+<br>
+<p id="main"> Many desktop and server programs use JavaScript.</p>
+<br><br>
+
+<!-- THE FOLLOWING IS THE START OF JAVASCRIPT!!!!!! -->
+
+
+
+<!-- Make a BUTTON to replace text on HTML doc.-->
+<button type="button" onclick="document.getElementById('intro').innerHTML='JavaScript allows us to CHANGE text!'">Change</button>
+<button type="button" onclick="document.getElementById('intro').innerHTML='JavaScript programs the behavior of the web.'">REVERT</button>
+
+<br><br>
+
+<!-- Use buttons to modify text size as well as color-->
+<button type="button" onclick="document.getElementById('main').style.fontSize='20px'">20 pixels</button>
+<button type="button" onclick="document.getElementById('main').style.fontSize='22px'">22 pixels</button>
+<button type="button" onclick="document.getElementById('main').style.fontSize='26px'">26 pixels</button>
+<button type="button" onclick="document.getElementById('main').style.fontSize='28px'">28 pixels</button>
+<button type="button" onclick="document.getElementById('main').style.fontSize='30px'">30 pixels</button>
+
+
+<br><br>
+
+
+<button type="button" onclick="document.getElementById('main').style.color='blue'">REVERT</button>
+<button type="button" onclick="document.getElementById('main').style.color='#cc0000'">Red</button>
+<button type="button" onclick="document.getElementById('main').style.color='#33cc00'">Yellow</button>
+<button type="button" onclick="document.getElementById('main').style.color='#00b3b3'">Turquoise</button>
+<button type="button" onclick="document.getElementById('main').style.color='green'">Green</button>
+
+
+<br><br>
+
+
+<p id="output">JavaScript results will appear HERE!!!</p>
+<button type="button" onclick="document.getElementById('output').innerHTML=addNumbers(2,3)">2+3</button>
+<button type="button" onclick="document.getElementById('output').innerHTML=mathOps(2,3)">(2+3)+(2*3)</button>
+
+
+</body>
+</html>
